@@ -1,12 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sylvie Croteau</title>
-</head>
-<body>
-    hello world!
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sylvie HTML Final</title>
+  </head>
+  <body>
+
+    <h1>Looking for a New Book to Read?</h1>
+    <h2>Fill out a short survey and I will send you some truly outstanding recommendations!</h2>
+    <img src="library.jpg" alt="stacks of books on shelves" width="700" length="700"></p>
+    <p>
+    <h3>Benefits of Reading:</h3>
+        <ol>
+        <li>reduces stress</li>
+        <li>increases your knowledge</li>
+          <ul>
+            <li>betters focus and concentration</li>
+            <li>improves the memory</li>
+            <li>refines writing skills</li>
+              <ol>
+                <ul><li>expands the vocabulary</li></ul>
+              </ol>
+          </ul>
+        <li>unlimited source of entertainment</li>
+      </ol>
+    </p>
+    <p>Enter your information below!</p>
+
+        <form method="get">
+
+         <!-- user information -->
+
+          <label for="FirstName">First Name:</label>
+          <input type="text" id="FirstName" placeholder="first name">
+
+          <label for="LastName">Last Name:</label>
+          <input type="text" id="LastName" placeholder="last name">
+          <p></p>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="name@email.com">
+
+          <label for="pass">Password:</label>
+          <input type="password" id="pass" placeholder="password" >
+        
+            <!-- actual survey content -->
+          <p>Do you like science fiction?</p>
+          <label for="yes">Yes:</label>
+          <input type="radio" name="SciFi" id="yes" value="yesSciFi">
+
+          <label for="no">No:</label>
+          <input type="radio" name="SciFi" id="no" value="noSciFi">
+
+          <p>Do you like fantasy?</p>
+          <label for="yes">Yes:</label>
+          <input type="radio" name="Fantasy" id="yes" value="yesFantasy">
+
+          <label for="no">No:</label>
+          <input type="radio" name="Fantasy" id="no" value="noFantasy">
+
+          <p>do you like books about history?</p>
+          <label for="yes">Yes:</label>
+          <input type="radio" name="History" id="yes" value="yesHistory">
+
+          <label for="no">No:</label>
+          <input type="radio" name="History" id="no" value="noHistory">
+
+          <p>do you like books about animals?</p>
+          <label for="yes">Yes:</label>
+          <input type="radio" name="Animals" id="yes" value="yesAnimals">
+
+          <label for="no">No:</label>
+          <input type="radio" name="Animals" id="no" value="noAnimals">
+
+          <p>Do you like sad books?</p>
+          <label for="yes">Yes:</label>
+          <input type="radio" name="SadBooks" id="yes" value="yesSad">
+
+          <label for="no">No:</label>
+          <input type="radio" name="SadBooks" id="no" value="noSad">
+
+          <p>Do you like books that make you irrationally and incredibly angry?</p>
+          <label for="yes">Yes:</label>
+          <input type="radio" name="Anger" id="yes" value="yesAnger">
+
+          <label for="no">No:</label>
+          <input type="radio" name="Anger" id="no" value="noAnger">
+
+          <p>Are you over the age of 18?</p>
+          <label for="yes">Yes:</label>
+          <input type="radio" name="Over18" id="yes" value="yesOver">
+
+          <label for="no">No:</label>
+          <input type="radio" name="Over18" id="no" value="noOver">
+
+          <p>How old are you?</p>
+          <select name="age">
+            <option value="c">0-7</option>
+            <option value="tw">8-12</option>
+            <option value="t">13-17</option>
+            <option value="ad">18-30</option>
+            <option value="oad">31-50</option>
+            <option value="o">51-79</option>
+            <option value="ods">80+</option>
+          </select>
+
+          <p>How would you like to compensate me for my services?</p>
+          <select name="payment">
+            <option value="cc">Credit Card</option>
+            <option value="pp">PayPal</option>
+            <option value="ht">human teeth</option>
+          </select>
+
+          <p></p>
+          <input type="submit" name="" value="Submit">
+
+
+        </form>
+     <p><a href="http://worldcat.org/libraries">Now click this link to find a library near you!</a></p>
+
+
+  </body>
 </html>
