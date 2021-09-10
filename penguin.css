@@ -1,0 +1,19 @@
+.sylvie{
+    background-color: #2fc2ae;
+    font-family: 'Aldrich', sans-serif;
+    text-align: center;
+    border: darkblue 8px dotted;
+    width: 1105px;
+    height: 100px;
+    color: red;
+}
+
+#julia{
+    background-color: #d050e0;
+    font-family: 'Aldrich', sans-serif;
+    text-align: center;
+    border: rgb(0, 167, 22) 8px dashed;
+    width: 1105px;
+    height: 100px;
+    color: rgb(238, 255, 0); 
+}
