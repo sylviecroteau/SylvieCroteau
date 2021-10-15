@@ -9,20 +9,56 @@ page that contains all the code you need for a new page.-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <title>OT CS Capstone</title>
+  <link rel="stylesheet" href="penguin.css">
+  <title>Love? Island</title>
 </head>
 <body>
   <!--Navbar-->
   <div data-include="nav"></div>
   <!--Whole page container div-->
   <div class="container">
-
-
+      <br>
+      <div class="sylvie">
+        <h1 class="display-1 text-center">Your Results</h1>
+      </div>
+<br>
+<div id="results"></div>
 
   </div>
   <!--Bootstrap and other JS scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/scripts.js"></script>
-</body>
+    <script type="text/javascript">
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const firstName = urlParams.get('firstName');
+      const email = urlParams.get('email');
+      const age = urlParams.getAll('age');
+      const doc = urlParams.getAll('doc');
+      const doccom = urlParams.getAll('doccom');
+      const par = urlParams.getAll('par');
+      const money = urlParams.getAll('money');
+      const prox = urlParams.getAll('prox');
+      var output = "Your name is: " + firstName + " <br> Your email is: " + email + "<br> Your age is: " + age + "<br> Your answer to 'Do you see a doctor regularly?' was: " + doc + "<br> Your answer to 'Do you feel comfortable talking to your doctor about your reproductive health?' was: " + doccom + "<br> Your answer to 'Do you feel comfortable talking to your parents about your reproductive health?' was: " + par + "<br> Your answer to 'Is money a deciding factor in decisions you make about seeking reproductive health care?' was: " + money + "<br> Your answer to 'Is proximity to health services a deciding factor in decisions you make about seeking reproductive health care?' was: " + prox;
+      console.log(output)
+      jQuery(document).ready(function() {
+        $("#results").html(output); 
+      });
+
+      
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+      <p class="text-center text-secondary">website by Sylvie Croteau, proud 2 on AP CS A exam</p>
+  </body>
 </html>
