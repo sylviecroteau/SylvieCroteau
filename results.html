@@ -16,7 +16,26 @@ page that contains all the code you need for a new page.-->
   <div data-include="nav"></div>
   <!--Whole page container div-->
   <div class="container">
-
+    <br>
+    <h4>THIS PAGE IS CURRENTLY UNDER CONSTRUCTION</h4>
+    <div id="results"></div>
+    <script type="text/javascript">
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const doc = urlParams.get('doc');
+      const doccom = urlParams.get('doccom');
+      const par = urlParams.get('par');
+      const money = urlParams.get('money');
+      const doccom = urlParams.get('prox');
+      const colors = urlParams.getAll('par')
+      const textbox = urlParams.get('textbox');
+      var output = "You said: " + doc + " <br> and " + doccom + "<br> and " + par + "<br> and <br>" + money;
+  
+      jQuery(document).ready(function() {
+        $("#results").html(output); 
+      });
+  
+    </script>
 
 
   </div>
@@ -24,5 +43,6 @@ page that contains all the code you need for a new page.-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/scripts.js"></script>
-</body>
+   <!--<link rel="stylesheet" href="reproductive.css"> -->
+  </body>
 </html>
